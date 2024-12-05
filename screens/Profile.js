@@ -41,7 +41,7 @@ export default function Profile({ navigation }) {
 
   useEffect(() => {
     async function getData(){
-      const t = await getAuthToken(false);
+      const t = await getAuthToken();
       setToken(t);
     }
     getData();
